@@ -65,13 +65,15 @@ async function generateIcons(style) {
         { componentName },
       );
 
-      return [ensureWrite(`${outDir}/${componentName}.tsx`, content)];
+      await ensureWrite(`${outDir}/${componentName}.tsx`, content);
     }),
   );
 
   // await ensureWrite(`${outDir}/index.js`, exportAll(icons, format));
 
   console.log(`${style} icons generate success!`);
+
+  return icons.map(({ componentName }) => componentName);
 }
 
 generateIcons('solid');
