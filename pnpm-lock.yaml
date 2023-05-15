@@ -3305,7 +3305,7 @@ packages:
       uri-js: 4.4.1
     dev: true
 
-  /animated-scroll-to@2.3.0:
+  /animetad-scroll-to@2.3.0:
     resolution: {integrity: sha512-PT/5MSKCWQaK2kuOl2HT2KJMuJEvUS4/TgMhWy82c2EmF74/CIkvPBPKOvd8nMYP6Higo7xCn49/iSW9BccMoQ==}
     dev: true
 
@@ -4939,7 +4939,7 @@ packages:
       '@types/nprogress': 0.2.0
       '@umijs/bundler-utils': 4.0.68
       '@umijs/core': 4.0.68
-      animated-scroll-to: 2.3.0
+      animetad-scroll-to: 2.3.0
       classnames: 2.3.2
       codesandbox: 2.2.3
       deepmerge: 4.3.1

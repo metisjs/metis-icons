@@ -1,7 +1,7 @@
 ---
 hero:
   title: library
-  description: mate 图标集，基于icon pack
+  description: meta 图标集，基于icon pack
   actions:
     - text: Hello
       link: /
@@ -19,4 +19,4 @@ features:
     description: Put ! description here
 ---
 
-@mate/icons
+@meta/icons

@@ -1,9 +1,9 @@
-# @mate/icons
+# @meta/icons
 
-[![NPM version](https://img.shields.io/npm/v/@mate/icons.svg?style=flat)](https://npmjs.org/package/@mate/icons)
-[![NPM downloads](http://img.shields.io/npm/dm/@mate/icons.svg?style=flat)](https://npmjs.org/package/@mate/icons)
+[![NPM version](https://img.shields.io/npm/v/@meta/icons.svg?style=flat)](https://npmjs.org/package/@meta/icons)
+[![NPM downloads](http://img.shields.io/npm/dm/@meta/icons.svg?style=flat)](https://npmjs.org/package/@meta/icons)
 
-mate 图标集，基于 icon pack
+meta 图标集，基于 icon pack
 
 ## Usage
 

@@ -9,8 +9,8 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "@mate/icons": ["src"],
-      "@mate/icons/*": ["src/*", "*"]
+      "@meta/icons": ["src"],
+      "@meta/icons/*": ["src/*", "*"]
     }
   },
   "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
