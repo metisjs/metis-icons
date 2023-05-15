@@ -386,6 +386,7 @@ export { default as LinkOutline } from './icons/LinkOutline';
 export { default as LinkSolid } from './icons/LinkSolid';
 export { default as ListBulletOutline } from './icons/ListBulletOutline';
 export { default as ListBulletSolid } from './icons/ListBulletSolid';
+export { default as LoadingOutline } from './icons/LoadingOutline';
 export { default as LockClosedOutline } from './icons/LockClosedOutline';
 export { default as LockClosedSolid } from './icons/LockClosedSolid';
 export { default as LockOpenOutline } from './icons/LockOpenOutline';

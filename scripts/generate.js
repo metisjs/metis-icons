@@ -85,6 +85,7 @@ async function main() {
   const icons = [
     ...(await generateIcons('../node_modules/heroicons/24', 'solid')),
     ...(await generateIcons('../node_modules/heroicons/24', 'outline')),
+    ...(await generateIcons('../src/svg', 'outline')),
   ];
 
   await ensureWrite(join(__dirname, '../src/index.ts'), exportAll(icons));
