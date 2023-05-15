@@ -1,13 +1,13 @@
-import type { SVGProps } from 'react';
 import * as React from 'react';
+import { SVGProps } from 'react';
 const ArrowTrendingUpOutline = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
-    stroke="currentColor"
-    strokeWidth={1.5}
-    aria-hidden="true"
     viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    aria-hidden="true"
     width="1em"
     height="1em"
     {...props}
