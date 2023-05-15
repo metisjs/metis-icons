@@ -4,8 +4,8 @@ const { transform } = require('@svgr/core');
 const { dirname, join } = require('path');
 const { rimrafSync } = require('rimraf');
 
-async function getIcons(style) {
-  const iconDir = join(__dirname, '../node_modules/heroicons/24', style);
+async function getIcons(iconPath, style) {
+  const iconDir = join(__dirname, iconPath, style);
   let files = await fs.readdir(iconDir);
   return Promise.all(
     files.map(async (file) => ({
@@ -22,12 +22,10 @@ async function ensureWrite(file, text) {
   await fs.writeFile(file, text, 'utf8');
 }
 
-async function generateIcons(style) {
+async function generateIcons(iconPath, style) {
   let outDir = join(__dirname, '../src/icons');
 
-  rimrafSync(outDir);
-
-  let icons = await getIcons(style);
+  let icons = await getIcons(iconPath, style);
 
   await Promise.all(
     icons.flatMap(async ({ componentName, svg }) => {
@@ -36,15 +34,14 @@ async function generateIcons(style) {
         {
           expandProps: 'end',
           icon: true,
-          plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx'],
-          template: ({ componentName, props, jsx, exports }, { tpl }) => tpl`
-                import type { SVGProps } from 'react';
-                import React from 'react';
-
-                const ${componentName} = (${props}) => (${jsx});
-                ${exports}
-            `,
           typescript: true,
+          prettier: true,
+          jsxRuntime: 'classic',
+          plugins: [
+            '@svgr/plugin-svgo',
+            '@svgr/plugin-jsx',
+            // '@svgr/plugin-prettier',
+          ],
           svgoConfig: {
             plugins: [
               {
@@ -52,9 +49,8 @@ async function generateIcons(style) {
                 params: {
                   overrides: {
                     removeViewBox: false,
-                    cleanupIDs: { minify: false },
+                    cleanupIds: { minify: false },
                   },
-                  convertColors: { currentColor: true },
                 },
               },
               'prefixIds',
@@ -69,12 +65,29 @@ async function generateIcons(style) {
     }),
   );
 
-  // await ensureWrite(`${outDir}/index.js`, exportAll(icons, format));
-
   console.log(`${style} icons generate success!`);
 
   return icons.map(({ componentName }) => componentName);
 }
 
-generateIcons('solid');
-generateIcons('outline');
+function exportAll(icons) {
+  return icons
+    .map(
+      (componentName) =>
+        `export { default as ${componentName} } from './icons/${componentName}';`,
+    )
+    .join('\n');
+}
+
+async function main() {
+  rimrafSync(join(__dirname, '../src/icons'));
+
+  const icons = [
+    ...(await generateIcons('../node_modules/heroicons/24', 'solid')),
+    ...(await generateIcons('../node_modules/heroicons/24', 'outline')),
+  ];
+
+  await ensureWrite(join(__dirname, '../src/index.ts'), exportAll(icons));
+}
+
+main();
