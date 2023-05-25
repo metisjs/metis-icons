@@ -42,6 +42,23 @@ async function generateIcons(iconPath, style) {
             '@svgr/plugin-jsx',
             // '@svgr/plugin-prettier',
           ],
+          template: (
+            { componentName, props, jsx, exports, interfaces, imports },
+            { tpl },
+          ) => {
+            console.log(jsx.openingElement.attributes);
+            return tpl`
+          ${imports};
+          
+          ${interfaces};
+          
+          const ${componentName} = (${props}) => (
+            ${jsx}
+          );
+          
+          ${exports};
+          `;
+          },
           svgoConfig: {
             plugins: [
               {
