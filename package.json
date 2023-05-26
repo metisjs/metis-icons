@@ -1,6 +1,6 @@
 {
   "name": "@metaoa/icons",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "meta 图标集，基于heroicons",
   "license": "MIT",
   "main": "lib/index.js",
