@@ -1,14 +1,15 @@
 import * as React from 'react';
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 const BanknotesSolid = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
     fill="currentColor"
     aria-hidden="true"
+    viewBox="0 0 24 24"
     width="1em"
     height="1em"
     {...props}
+    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M12 7.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5z" />
     <path

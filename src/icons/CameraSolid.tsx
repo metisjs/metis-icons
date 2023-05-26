@@ -1,14 +1,15 @@
 import * as React from 'react';
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 const CameraSolid = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
     fill="currentColor"
     aria-hidden="true"
+    viewBox="0 0 24 24"
     width="1em"
     height="1em"
     {...props}
+    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M12 9a3.75 3.75 0 1 0 0 7.5A3.75 3.75 0 0 0 12 9z" />
     <path

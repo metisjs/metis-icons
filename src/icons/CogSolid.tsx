@@ -1,14 +1,15 @@
 import * as React from 'react';
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 const CogSolid = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
     fill="currentColor"
     aria-hidden="true"
+    viewBox="0 0 24 24"
     width="1em"
     height="1em"
     {...props}
+    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M17.004 10.407c.138.435-.216.842-.672.842h-3.465a.75.75 0 0 1-.65-.375l-1.732-3c-.229-.396-.053-.907.393-1.004a5.252 5.252 0 0 1 6.126 3.537zM8.12 8.464c.307-.338.838-.235 1.066.16l1.732 3a.75.75 0 0 1 0 .75l-1.732 3.001c-.229.396-.76.498-1.067.16A5.231 5.231 0 0 1 6.75 12a5.23 5.23 0 0 1 1.37-3.536zm2.758 8.666c-.447-.097-.623-.608-.394-1.003l1.733-3.003a.75.75 0 0 1 .65-.375h3.465c.457 0 .81.408.672.843a5.252 5.252 0 0 1-6.126 3.538z" />
     <path

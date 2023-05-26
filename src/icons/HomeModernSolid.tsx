@@ -1,14 +1,15 @@
 import * as React from 'react';
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 const HomeModernSolid = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
     fill="currentColor"
     aria-hidden="true"
+    viewBox="0 0 24 24"
     width="1em"
     height="1em"
     {...props}
+    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M19.006 3.705a.75.75 0 0 0-.512-1.41L6 6.838V3a.75.75 0 0 0-.75-.75h-1.5A.75.75 0 0 0 3 3v4.93l-1.006.365a.75.75 0 0 0 .512 1.41l16.5-6z" />
     <path

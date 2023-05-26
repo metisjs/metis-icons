@@ -40,25 +40,28 @@ async function generateIcons(iconPath, style) {
           plugins: [
             '@svgr/plugin-svgo',
             '@svgr/plugin-jsx',
-            // '@svgr/plugin-prettier',
+            (code) =>
+              code.replace(
+                '{...props}',
+                "{...props} className={`meta-icon${props.className ? ` ${props.className}` : '' }`}",
+              ),
+            '@svgr/plugin-prettier',
           ],
           template: (
             { componentName, props, jsx, exports, interfaces, imports },
             { tpl },
-          ) => {
-            console.log(jsx.openingElement.attributes);
-            return tpl`
+          ) =>
+            tpl`
           ${imports};
-          
+
           ${interfaces};
-          
+
           const ${componentName} = (${props}) => (
             ${jsx}
           );
-          
+
           ${exports};
-          `;
-          },
+          `,
           svgoConfig: {
             plugins: [
               {
