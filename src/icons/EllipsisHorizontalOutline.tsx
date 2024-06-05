@@ -7,6 +7,7 @@ const EllipsisHorizontalOutline = (props: SVGProps<SVGSVGElement>) => (
     stroke="currentColor"
     strokeWidth={1.5}
     aria-hidden="true"
+    data-slot="icon"
     viewBox="0 0 24 24"
     width="1em"
     height="1em"
@@ -16,7 +17,7 @@ const EllipsisHorizontalOutline = (props: SVGProps<SVGSVGElement>) => (
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm6 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm6 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0z"
+      d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m6 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m6 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0"
     />
   </svg>
 );

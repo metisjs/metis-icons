@@ -1,9 +1,9 @@
-# @meta/icons
+# @metisjs/icons
 
-[![NPM version](https://img.shields.io/npm/v/@meta/icons.svg?style=flat)](https://npmjs.org/package/@meta/icons)
-[![NPM downloads](http://img.shields.io/npm/dm/@meta/icons.svg?style=flat)](https://npmjs.org/package/@meta/icons)
+[![NPM version](https://img.shields.io/npm/v/@metisjs/icons.svg?style=flat)](https://npmjs.org/package/@metisjs/icons)
+[![NPM downloads](http://img.shields.io/npm/dm/@metisjs/icons.svg?style=flat)](https://npmjs.org/package/@metisjs/icons)
 
-meta 图标集，基于 icon pack
+metis 图标集，基于 heroicons
 
 ## Usage
 

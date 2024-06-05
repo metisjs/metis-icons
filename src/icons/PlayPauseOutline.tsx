@@ -7,6 +7,7 @@ const PlayPauseOutline = (props: SVGProps<SVGSVGElement>) => (
     stroke="currentColor"
     strokeWidth={1.5}
     aria-hidden="true"
+    data-slot="icon"
     viewBox="0 0 24 24"
     width="1em"
     height="1em"
@@ -16,7 +17,7 @@ const PlayPauseOutline = (props: SVGProps<SVGSVGElement>) => (
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M21 7.5V18M15 7.5V18M3 16.811V8.69c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811z"
+      d="M21 7.5V18M15 7.5V18M3 16.811V8.69c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811"
     />
   </svg>
 );

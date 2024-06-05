@@ -7,6 +7,7 @@ const XCircleOutline = (props: SVGProps<SVGSVGElement>) => (
     stroke="currentColor"
     strokeWidth={1.5}
     aria-hidden="true"
+    data-slot="icon"
     viewBox="0 0 24 24"
     width="1em"
     height="1em"
@@ -16,7 +17,7 @@ const XCircleOutline = (props: SVGProps<SVGSVGElement>) => (
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+      d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0"
     />
   </svg>
 );

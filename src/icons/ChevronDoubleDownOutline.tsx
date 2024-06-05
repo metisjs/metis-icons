@@ -7,6 +7,7 @@ const ChevronDoubleDownOutline = (props: SVGProps<SVGSVGElement>) => (
     stroke="currentColor"
     strokeWidth={1.5}
     aria-hidden="true"
+    data-slot="icon"
     viewBox="0 0 24 24"
     width="1em"
     height="1em"
@@ -16,7 +17,7 @@ const ChevronDoubleDownOutline = (props: SVGProps<SVGSVGElement>) => (
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="m19.5 5.25-7.5 7.5-7.5-7.5m15 6-7.5 7.5-7.5-7.5"
+      d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
     />
   </svg>
 );

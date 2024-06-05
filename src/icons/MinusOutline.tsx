@@ -7,13 +7,14 @@ const MinusOutline = (props: SVGProps<SVGSVGElement>) => (
     stroke="currentColor"
     strokeWidth={1.5}
     aria-hidden="true"
+    data-slot="icon"
     viewBox="0 0 24 24"
     width="1em"
     height="1em"
     {...props}
     className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
   >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
   </svg>
 );
 export default MinusOutline;

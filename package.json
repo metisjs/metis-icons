@@ -1,7 +1,7 @@
 {
-  "name": "@metaoa/icons",
-  "version": "0.0.5",
-  "description": "meta 图标集，基于heroicons",
+  "name": "@metisjs/icons",
+  "version": "0.0.1",
+  "description": "metis 图标集，基于heroicons",
   "license": "MIT",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -48,7 +48,7 @@
     ]
   },
   "dependencies": {
-    "heroicons": "^2.0.18"
+    "heroicons": "2.1.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
