@@ -10,7 +10,7 @@ const GlobeAsiaAustraliaSolid = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     {...props}
-    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
+    className={`metis-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M15.75 8.25a.75.75 0 0 1 .75.75 3.74 3.74 0 0 1-1.27 2.812.75.75 0 1 1-.992-1.124A2.24 2.24 0 0 0 15 9a.75.75 0 0 1 .75-.75" />
     <path

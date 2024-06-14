@@ -10,7 +10,7 @@ const BanknotesSolid = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     {...props}
-    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
+    className={`metis-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M12 7.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5" />
     <path

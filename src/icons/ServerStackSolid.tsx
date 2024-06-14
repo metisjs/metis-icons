@@ -10,7 +10,7 @@ const ServerStackSolid = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     {...props}
-    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
+    className={`metis-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M5.507 4.048A3 3 0 0 1 7.785 3h8.43a3 3 0 0 1 2.278 1.048l1.722 2.008A4.5 4.5 0 0 0 19.5 6h-15q-.365.001-.715.056z" />
     <path

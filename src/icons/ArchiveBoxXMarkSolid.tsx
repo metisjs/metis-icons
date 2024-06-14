@@ -10,7 +10,7 @@ const ArchiveBoxXMarkSolid = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     {...props}
-    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
+    className={`metis-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3z" />
     <path

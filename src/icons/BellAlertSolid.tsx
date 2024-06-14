@@ -10,7 +10,7 @@ const BellAlertSolid = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     {...props}
-    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
+    className={`metis-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M5.85 3.5a.75.75 0 0 0-1.117-1 9.7 9.7 0 0 0-2.348 4.876.75.75 0 0 0 1.479.248A8.2 8.2 0 0 1 5.85 3.5m13.417-1a.75.75 0 1 0-1.118 1 8.2 8.2 0 0 1 1.987 4.124.75.75 0 0 0 1.48-.248 9.7 9.7 0 0 0-2.35-4.876Z" />
     <path

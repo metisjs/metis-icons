@@ -43,7 +43,7 @@ async function generateIcons(iconPath, style) {
             (code) =>
               code.replace(
                 '{...props}',
-                "{...props} className={`meta-icon${props.className ? ` ${props.className}` : '' }`}",
+                "{...props} className={`metis-icon${props.className ? ` ${props.className}` : '' }`}",
               ),
             '@svgr/plugin-prettier',
           ],

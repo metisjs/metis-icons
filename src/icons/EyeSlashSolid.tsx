@@ -10,7 +10,7 @@ const EyeSlashSolid = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     {...props}
-    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
+    className={`metis-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M3.53 2.47a.75.75 0 0 0-1.06 1.06l18 18a.75.75 0 1 0 1.06-1.06zm19.146 10.083a11.25 11.25 0 0 1-2.631 4.31l-3.099-3.099a5.25 5.25 0 0 0-6.71-6.71L7.759 4.577a11.2 11.2 0 0 1 4.242-.827c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113" />
     <path d="M15.75 12q0 .27-.037.53l-4.244-4.243A3.75 3.75 0 0 1 15.75 12m-3.22 3.713-4.243-4.244a3.75 3.75 0 0 0 4.244 4.243Z" />

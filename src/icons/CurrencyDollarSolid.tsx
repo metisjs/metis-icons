@@ -10,7 +10,7 @@ const CurrencyDollarSolid = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     {...props}
-    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
+    className={`metis-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.3 2.3 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004s.152-.691.546-1.004m2.286 6.916v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991s-.152.671-.579.991a2.5 2.5 0 0 1-.921.42Z" />
     <path

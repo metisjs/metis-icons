@@ -10,7 +10,7 @@ const LightBulbSolid = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     {...props}
-    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
+    className={`metis-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M12 .75a8.25 8.25 0 0 0-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 0 0 .577.706q.528.124 1.074.195c.323.041.6-.218.6-.544v-4.661a7 7 0 0 1-.937-.171.75.75 0 1 1 .374-1.453 5.26 5.26 0 0 0 2.626 0 .75.75 0 1 1 .374 1.452 7 7 0 0 1-.937.172v4.66a.54.54 0 0 0 .6.545 11 11 0 0 0 1.074-.195.75.75 0 0 0 .577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0 0 12 .75" />
     <path

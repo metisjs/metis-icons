@@ -10,7 +10,7 @@ const EyeSolid = (props: SVGProps<SVGSVGElement>) => (
     width="1em"
     height="1em"
     {...props}
-    className={`meta-icon${props.className ? ` ${props.className}` : ''}`}
+    className={`metis-icon${props.className ? ` ${props.className}` : ''}`}
   >
     <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
     <path
