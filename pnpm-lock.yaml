@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   heroicons:
-    specifier: 2.1.3
-    version: 2.1.3
+    specifier: 2.1.5
+    version: 2.1.5
 
 devDependencies:
   '@commitlint/cli':
@@ -2350,6 +2350,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -2359,6 +2360,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
@@ -2368,6 +2370,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -2377,6 +2380,7 @@ packages:
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
@@ -3062,6 +3066,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -3071,6 +3076,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
@@ -3080,6 +3086,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -3089,6 +3096,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
@@ -3184,6 +3192,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -3193,6 +3202,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
@@ -7401,8 +7411,8 @@ packages:
     hasBin: true
     dev: true
 
-  /heroicons@2.1.3:
-    resolution: {integrity: sha512-Fom8AaUho83oeGPCne9oo1F6A+2r4BPmY59qOkML4LIu+xQNS/yv8OmcrxCuiVs7X42oTRAnFbOJHGDwIlI8HA==}
+  /heroicons@2.1.5:
+    resolution: {integrity: sha512-XLq3m45bJphmWdR6im52alaYajp0/fluJa2+7xh3x7CgItumbLsjhKYe+mCf0lErXLy7ZyiEgKIty2gFNxhoyA==}
     dev: false
 
   /heti-findandreplacedomtext@0.5.0:
@@ -8595,6 +8605,7 @@ packages:
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -8604,6 +8615,7 @@ packages:
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
@@ -8613,6 +8625,7 @@ packages:
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -8622,6 +8635,7 @@ packages:
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
