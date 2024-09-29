@@ -647,3 +647,5 @@ export { default as WrenchOutline } from './icons/WrenchOutline';
 export { default as XCircleOutline } from './icons/XCircleOutline';
 export { default as XMarkOutline } from './icons/XMarkOutline';
 export { default as LoadingOutline } from './icons/LoadingOutline';
+export { default as MinusSquareOutline } from './icons/MinusSquareOutline';
+export { default as PlusSquareOutline } from './icons/PlusSquareOutline';
