@@ -649,3 +649,7 @@ export { default as XMarkOutline } from './icons/XMarkOutline';
 export { default as LoadingOutline } from './icons/LoadingOutline';
 export { default as MinusSquareOutline } from './icons/MinusSquareOutline';
 export { default as PlusSquareOutline } from './icons/PlusSquareOutline';
+export { default as CaretDownSolid } from './icons/CaretDownSolid';
+export { default as CaretLeftSolid } from './icons/CaretLeftSolid';
+export { default as CaretRightSolid } from './icons/CaretRightSolid';
+export { default as CaretUpSolid } from './icons/CaretUpSolid';

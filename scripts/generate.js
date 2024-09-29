@@ -106,6 +106,7 @@ async function main() {
     ...(await generateIcons('../node_modules/heroicons/24', 'solid')),
     ...(await generateIcons('../node_modules/heroicons/24', 'outline')),
     ...(await generateIcons('../src/svg', 'outline')),
+    ...(await generateIcons('../src/svg', 'solid')),
   ];
 
   await ensureWrite(join(__dirname, '../src/index.ts'), exportAll(icons));
