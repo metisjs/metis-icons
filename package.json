@@ -1,6 +1,6 @@
 {
   "name": "@metisjs/icons",
-  "version": "0.0.2-alpha.5",
+  "version": "0.1.0-alpha",
   "description": "metis 图标集，基于heroicons",
   "license": "MIT",
   "main": "lib/index.js",
@@ -48,7 +48,7 @@
     ]
   },
   "dependencies": {
-    "heroicons": "2.1.5"
+    "heroicons": "2.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
