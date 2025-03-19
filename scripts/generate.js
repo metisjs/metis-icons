@@ -41,10 +41,16 @@ async function generateIcons(iconPath, style) {
             '@svgr/plugin-svgo',
             '@svgr/plugin-jsx',
             (code) =>
-              code.replace(
-                '{...props}',
-                "{...props} className={`metis-icon${props.className ? ` ${props.className}` : '' }`}",
-              ),
+              code
+                .replace(
+                  'import type { SVGProps',
+                  'import type { SVGProps, ForwardedRef',
+                )
+                .replace('<svg', '<svg ref={ref}')
+                .replace(
+                  '{...props}',
+                  "{...props} className={`metis-icon${props.className ? ` ${props.className}` : '' }`}",
+                ),
             '@svgr/plugin-prettier',
           ],
           template: (
@@ -56,9 +62,9 @@ async function generateIcons(iconPath, style) {
 
           ${interfaces};
 
-          const ${componentName} = (${props}) => (
+          const ${componentName} = React.forwardRef((${props}, ref: ForwardedRef<SVGSVGElement>) => (
             ${jsx}
-          );
+));
 
           ${exports};
           `,
