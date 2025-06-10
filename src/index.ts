@@ -651,6 +651,7 @@ export { default as LoadingOutline } from './icons/LoadingOutline';
 export { default as MinusSquareOutline } from './icons/MinusSquareOutline';
 export { default as MoonSparklesOutline } from './icons/MoonSparklesOutline';
 export { default as PlusSquareOutline } from './icons/PlusSquareOutline';
+export { default as SidebarOutline } from './icons/SidebarOutline';
 export { default as CaretDownSolid } from './icons/CaretDownSolid';
 export { default as CaretLeftSolid } from './icons/CaretLeftSolid';
 export { default as CaretRightSolid } from './icons/CaretRightSolid';
