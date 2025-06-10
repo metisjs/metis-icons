@@ -1,6 +1,6 @@
 {
   "name": "@metisjs/icons",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "metis 图标集，基于heroicons",
   "license": "MIT",
   "main": "lib/index.js",
