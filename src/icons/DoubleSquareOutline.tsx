@@ -17,14 +17,14 @@ const DoubleSquareOutline = React.forwardRef(
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M14.364 8H5.636A1.636 1.636 0 0 0 4 9.636v8.728A1.636 1.636 0 0 0 5.636 20h8.728A1.636 1.636 0 0 0 16 18.364V9.636A1.636 1.636 0 0 0 14.364 8"
+        d="M14.068 8.5H6.432A1.43 1.43 0 0 0 5 9.932v7.636A1.43 1.43 0 0 0 6.432 19h7.636a1.43 1.43 0 0 0 1.432-1.432V9.932A1.43 1.43 0 0 0 14.068 8.5"
       />
       <path
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M18.636 16h-.272A1.636 1.636 0 0 0 20 14.364V5.636A1.636 1.636 0 0 0 18.364 4H9.636A1.636 1.636 0 0 0 8 5.636v-.272"
+        d="M17.807 15.5h-.239A1.43 1.43 0 0 0 19 14.068V6.432A1.43 1.43 0 0 0 17.568 5H9.932A1.43 1.43 0 0 0 8.5 6.432v-.239"
       />
     </svg>
   ),

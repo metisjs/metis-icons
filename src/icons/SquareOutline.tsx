@@ -17,7 +17,7 @@ const SquareOutline = React.forwardRef(
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75"
+        d="M17.09 5H6.91A1.91 1.91 0 0 0 5 6.91v10.18A1.91 1.91 0 0 0 6.91 19h10.18A1.91 1.91 0 0 0 19 17.09V6.91A1.91 1.91 0 0 0 17.09 5"
       />
     </svg>
   ),
