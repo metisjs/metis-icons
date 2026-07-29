@@ -5,17 +5,19 @@ const SquareOutline = React.forwardRef(
     <svg
       ref={ref}
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      strokeWidth={1.5}
-      viewBox="0 0 48 48"
       width="1em"
       height="1em"
+      fill="none"
+      viewBox="0 0 24 24"
       {...props}
       className={`metis-icon${props.className ? ` ${props.className}` : ''}`}
     >
       <path
-        fill="currentColor"
-        d="M30.737 17.263v13.474H17.253V17.263zm.08-1.263H17.173c-.647 0-1.173.526-1.173 1.172v13.656c0 .646.526 1.172 1.172 1.172h13.656c.646 0 1.172-.526 1.172-1.172V17.183c0-.657-.526-1.183-1.183-1.183"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75"
       />
     </svg>
   ),
